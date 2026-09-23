@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Distribuidora Cabrera">
+<meta name="description" content="Distribuidora Cabrera - Pollo fresco, mayoreo y menudeo. Entregas diarias.">
+<meta name="keywords" content="Distribuidora Cabrera, pollo fresco, pollo mayoreo, pechuga de pollo, pierna y muslo">
+<title>Distribuidora Cabrera - Pollo Fresco</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="paper-texture">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">
+      <img src="img/pollos.jpg" alt="Distribuidora Cabrera" class="logo-icon">
+      DISTRIBUIDORA CABRERA
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Mayoreo</a></li>
+        <li><a href="#oferta">Ofertas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Distribuidora Cabrera.')">
+        <i data-lucide="message-circle"></i> Pedir ahora
+      </button>
+    </nav>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+  </div>
+
+  <nav id="mobile-menu" class="mobile-nav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#beneficios">Mayoreo</a></li>
+      <li><a href="#oferta">Ofertas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Distribuidora Cabrera.')">
+      <i data-lucide="message-circle"></i> Pedir ahora
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Distribuidora Cabrera - Pollo del día</p>
+        <h1>Pollo fresco y de calidad para tu hogar y negocio</h1>
+        <p class="lead">Somos Distribuidora Cabrera. Venta de pollo fresco por kilo y mayoreo. Entregas a domicilio todos los días.</p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn primary">Ver productos</a>
+          <button type="button" class="btn outline" onclick="openWhatsApp('Hola Cabrera, quiero cotizar pollo mayoreo.')">Cotizar mayoreo</button>
+        </div>
+        <p class="trust"><i data-lucide="check-circle"></i> Más de 500 clientes en mayoreo</p>
+      </div>
+      <div class="hero-image reveal">
+        <img src="img/pollos123.jpg" alt="Pollo fresco Distribuidora Cabrera">
+        <span class="tag tag-love">100% Fresco del día</span>
+        <span class="tag tag-custom">Entrega a domicilio</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" class="products">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Nuestros productos</p>
+        <h2>Todo en pollo fresco</h2>
+        <p class="lead">Cortes limpios y listos para tu venta o cocina</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <img src="img/1.jpg" alt="Pollo entero">
+          <div class="product-body">
+            <span class="tag">Más vendido</span>
+            <h3>Pollo Entero</h3>
+            <p class="price">$75 MXN / kg</p>
+            <p class="description">Pollo entero fresco, limpio, ideal para rosticería y caldo.</p>
+            <button type="button" class="btn card" onclick="openWhatsApp('Hola Cabrera, me interesa el Pollo Entero')">Pedir por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <img src="img/2.jpg" alt="Pechuga de pollo">
+          <div class="product-body">
+            <span class="tag">Pechuga</span>
+            <h3>Pechuga sin hueso</h3>
+            <p class="price">$120 MXN / kg</p>
+            <p class="description">Pechuga limpia sin hueso, perfecta para milanesa y fajitas.</p>
+            <button type="button" class="btn card" onclick="openWhatsApp('Hola Cabrera, me interesa la Pechuga')">Pedir por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <img src="img/3.jpg" alt="Pierna y muslo">
+          <div class="product-body">
+            <span class="tag">Pierna y muslo</span>
+            <h3>Pierna con Muslo</h3>
+            <p class="price">$85 MXN / kg</p>
+            <p class="description">El corte más pedido para negocios de comida y asaderos.</p>
+            <button type="button" class="btn card" onclick="openWhatsApp('Hola Cabrera, me interesa Pierna con Muslo')">Pedir por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <img src="img/4.jpg" alt="Alitas">
+          <div class="product-body">
+            <span class="tag">Alitas</span>
+            <h3>Alitas de Pollo</h3>
+            <p class="price">$95 MXN / kg</p>
+            <p class="description">Alitas grandes y carnosas, especiales para alitas BBQ.</p>
+            <button type="button" class="btn card" onclick="openWhatsApp('Hola Cabrera, me interesan las Alitas')">Pedir por WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <img src="img/5.jpg" alt="Pollo mayoreo">
+          <div class="product-body">
+            <span class="tag">Mayoreo</span>
+            <h3>Caja Mayoreo 20kg</h3>
+            <p class="price">Precio especial</p>
+            <p class="description">Venta por caja para rosticerías, taquerías y restaurantes.</p>
+            <button type="button" class="btn card" onclick="openWhatsApp('Hola Cabrera, quiero precio de mayoreo por caja')">Cotizar mayoreo</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <img src="img/pollos12.avif" alt="Menudencia">
+          <div class="product-body">
+            <span class="tag">Menudencia</span>
+            <h3>Menudencia y Huacal</h3>
+            <p class="price">$45 MXN / kg</p>
+            <p class="description">Patita, molleja, hígado y huacal para consomé.</p>
+            <button type="button" class="btn card" onclick="openWhatsApp('Hola Cabrera, me interesa la menudencia')">Pedir por WhatsApp</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="benefits">
+    <div class="container">
+      <div class="section-heading reveal"><h2>¿Por qué Distribuidora Cabrera?</h2></div>
+      <div class="benefits-grid">
+        <article class="benefit-card reveal"><div class="benefit-icon"><i data-lucide="sparkles"></i></div><h3>Siempre Fresco</h3><p>Pollo del día, no congelado.</p></article>
+        <article class="benefit-card reveal"><div class="benefit-icon"><i data-lucide="truck"></i></div><h3>Entrega Rápida</h3><p>A tu casa o negocio el mismo día.</p></article>
+        <article class="benefit-card reveal"><div class="benefit-icon"><i data-lucide="badge-dollar-sign"></i></div><h3>Precio Mayoreo</h3><p>El mejor precio por volumen.</p></article>
+        <article class="benefit-card reveal"><div class="benefit-icon"><i data-lucide="shield-check"></i></div><h3>Calidad Garantizada</h3><p>Limpio, fresco y bien pesado.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="oferta" class="offer">
+    <div class="container">
+      <div class="offer-panel reveal">
+        <span class="tag tag-light">Oferta de bienvenida</span>
+        <h2>10% en tu primer pedido con Cabrera</h2>
+        <p>Pide hoy y te damos descuento de bienvenida.</p>
+        <button id="offer-button" type="button" class="btn butter" onclick="revealOffer()">Quiero mi descuento</button>
+        <div id="offer-reveal" class="offer-reveal hidden">
+          <p class="offer-reveal-title">Tu código es:</p>
+          <div class="offer-code-row">
+            <span class="offer-code">CABRERA10</span>
+            <button id="copy-code" type="button" class="btn outline" onclick="copyDiscount()">Copiar código</button>
+            <button type="button" class="btn whatsapp" onclick="openWhatsApp('Hola Cabrera, quiero usar mi código CABRERA10')">Pedir por WhatsApp</button>
+          </div>
+          <p id="copy-feedback" class="copy-feedback hidden">Código copiado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container contact-panel reveal">
+      <div class="contact-text">
+        <p class="eyebrow">Estamos cerca</p>
+        <h2>Pide tu pollo hoy a Cabrera</h2>
+        <p class="lead">Escríbenos por WhatsApp y te cotizamos en minutos.</p>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola Cabrera, quiero hacer un pedido.')">Escribir por WhatsApp</button>
+      </div>
+      <aside class="contact-info">
+        <ul>
+          <li><i data-lucide="map-pin"></i> Entregas en Colonia Vista Hermosa y alrededores</li>
+          <li><i data-lucide="phone"></i> 56 3903 9944</li>
+          <li><i data-lucide="clock-3"></i> Lunes a Domingo 6:00 a 18:00</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="brand">Distribuidora Cabrera</p>
+    <p class="love">© 2026 Distribuidora Cabrera. Pollo fresco todos los días.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
